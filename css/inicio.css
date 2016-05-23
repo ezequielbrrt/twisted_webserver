@@ -1,0 +1,16 @@
+body {
+	background-color: lightblue;
+
+}
+.container{
+	width: 600px;
+}
+
+#contenedor{
+	margin-top: 200px;
+	width: 200px;
+}
+#boton{
+	width: 200px;
+	height: 100px;
+}

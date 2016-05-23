@@ -1,0 +1,4 @@
+analisis vectorial ,7,89,32
+avanzadas,4,6,3
+redes 2,6,3,1.5
+calculo,4,7,6
