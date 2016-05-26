@@ -74,13 +74,14 @@ def index(request):
 
   <div class="table-responsive" >
     <table class="table table-hover" id="tabla">
+    <form method="post">
       <thead>
         <tr>
           <th>#</th>
           <th>Materia</th>
-          <th>Creditos</th>
-          <th>Frecuencia</th>
           <th>Tiempo</th>
+          <th>Frecuencia</th>
+          <th>Créditos</th>
           <th></th>
           <th>Seleccionado</th>
         </tr>
@@ -88,79 +89,101 @@ def index(request):
       <tbody>
         <tr>
           <th scope="row">1</th>
-          <td>Matematicas</td>
-          <td>12:00-13:00</td>
-          <td>11:00-12:00</td>
-          <td>20:00-21:00</td>
+          <td>D. Sistemas Digitales</td>
+          <td>90 minutos</td>
+          <td>3</td>
+          <td>4.50</td>
           <td></td>
           <td><div class="checkbox">
                 <label>
-                  <input type="checkbox" id="blankCheckbox" value="option1">H
+                  <input type="checkbox" id="blankCheckbox" value="option1" name="1">Seleccionar
                 </label>
               </div>
           </td>
         </tr>
         <tr>
           <th scope="row">2</th>
-          <td>Español</td>
-          <td>12:00-13:00</td>
-          <td>11:00-12:00</td>
-          <td>20:00-21:00</td>
+          <td>Admin. Financiera</td>
+          <td>90 minutos</td>
+          <td>3</td>
+          <td>4.36</td>
+          <td></td>
+          <td><div class="checkbox">
+                <label>
+                  <input type="checkbox" id="blankCheckbox" value="option1" name="2">Seleccionar
+                </label>
+              </div>
+          </td>
         </tr>
         <tr>
           <th scope="row">3</th>
-          <td>Geografía</td>
-          <td>12:00-13:00</td>
-          <td>11:00-12:00</td>
-          <td>20:00-21:00</td>
+          <td>Compiladores</td>
+          <td>90 minutos</td>
+          <td>3</td>
+          <td>4.39</td>
+          <td></td>
+          <td><div class="checkbox">
+                <label>
+                  <input type="checkbox" id="blankCheckbox" value="option1" name="3">Seleccionar
+                </label>
+              </div>
+          </td>
         </tr>
         <tr>
           <th scope="row">4</th>
-            <td>Civica y ética</td>
-          <td>12:00-13:00</td>
-          <td>11:00-12:00</td>
-            <td>20:00-21:00</td>
+            <td>Redes 2</td>
+          <td>90 minutos</td>
+          <td>3</td>
+            <td>4.39</td>
+            <td></td>
+          <td><div class="checkbox">
+                <label>
+                  <input type="checkbox" id="blankCheckbox" value="option1" name="4">Seleccionar
+                </label>
+              </div>
+          </td>
   
         </tr>
         <tr>
           <th scope="row">5</th>
-          <td>Historia</td>
-          <td>12:00-13:00</td>
-          <td>11:00-12:00</td>
-          <td>20:00-21:00</td>
+          <td>Algoritmos</td>
+          <td>90 minutos</td>
+          <td>3</td>
+          <td>4.39</td>
+          <td></td>
+          <td><div class="checkbox">
+                <label>
+                  <input type="checkbox" id="blankCheckbox" value="option1" name="5">Seleccionar
+                </label>
+              </div>
+          </td>
         </tr>
         <tr>
           <th scope="row">6</th>
-          <td>Física</td>
-          <td>12:00-13:00</td>
-          <td>11:00-12:00</td>
-          <td>20:00-21:00</td>
+          <td>Instrumentación</td>
+          <td>90 minutos</td>
+          <td>3</td>
+          <td>4.39</td>
+          <td></td>
+          <td><div class="checkbox">
+                <label>
+                  <input type="checkbox" id="blankCheckbox" value="instru" name="6">Seleccionar
+                </label>
+              </div>
+          </td>
         </tr>
          <tr>
           <th scope="row">7</th>
-          <td>Ingles</td>
-          <td>12:00-13:00</td>
-          <td>11:00-12:00</td>
-          <td>20:00-21:00</td>
-        </tr>
-        <tr>
-          <th scope="row">8</th>
-          <td>Económia</td>
-          <td>12:00-13:00</td>
-          <td>11:00-12:00</td>
-          <td>20:00-21:00</td>
-        </tr>
-        <tr>
-          <th scope="row">9</th>
-          <td>Informatica</td>
-          <td>12:00-13:00</td>
-          <td>11:00-12:00</td>
-          <td>20:00-21:00</td>
+          <td>Mat. Avanzadas</td>
+          <td>90 minutos</td>
+          <td>3</td>
+          <td>4.46</td>
           <td></td>
-          <td>
-            <div class="toogle">
-              
-            </div>
+          <td><div class="checkbox">
+                <label>
+                  <input type="checkbox" id="blankCheckbox" value="avanzadas" name="7">Seleccionar
+                </label>
+              </div>
           </td>
         </tr>
       </tbody>
@@ -169,12 +192,8 @@ def index(request):
       <div class="col-md-8">
       </div>
       <div class="col-md-offset-2 col-md-2">
-        <button id="guardar">
-          Guardar
-        </button>
-        <button id="salir">
-          Salir
-        </button>
+          <input type="submit">
+    </form>
       </div>
     </div>
   </div>
@@ -192,6 +211,9 @@ def index(request):
                     <div class="footer-col col-md-4">
                         <h3>IPN-ESCOM 3CV7</h3>
                         <p>Barreto Aviles Ezequiel Adrian</p>
+                        <p>Morales Baez Alan</p>
+                        <p>Venegas Melendez Marcos</p>
+                        <p>Salgado Flores Mauricio</p>
                     </div>
                 </div>
             </div>
